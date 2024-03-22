@@ -32,24 +32,22 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create two columns */
-  grid-template-rows: repeat(2, 1fr); /* Create two rows */
-  grid-template-areas: 
-    "team calc"
-    "sup karma"; /* Define the card placement in each grid area */
+  grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2rem;
 }
 
 .card {
   background-color: #ffffff;
-  border-top: 5px solid #ea5353;
   padding: 1rem;
   border-radius: 5px;
   text-align: left;
   position: relative; 
   box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
   padding-bottom: 90px;
+  width: 300px; /* Set a fixed width for each card */
+  height: 140px; /* Set a fixed height for each card */
+  left: 530px;
 }
 
 .card img {
@@ -68,29 +66,35 @@ body {
   opacity: 0.7; /* This reduces the text's opacity, making it appear lighter */
 }
 
+.card:nth-of-type(1) {
+  background-color: #ffffff;
+  border-top: 5px solid #ea5353;
+  width: 300px; /* Set a fixed width for each card */
+  height: 140px; /* Set a fixed height for each card */
+}
+
 .card:nth-of-type(2) {
   background-color: #ffffff;
   border-top: 5px solid #62dada;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+  width: 300px; /* Set a fixed width for each card */
+  height: 140px; /* Set a fixed height for each card */
+  left: 170px;
+  bottom: 130px;
 }
 
 .card:nth-of-type(3) {
   background-color: #ffffff;
   border-top: 5px solid #4a9dfc;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+  width: 300px; /* Set a fixed width for each card */
+  height: 140px; /* Set a fixed height for each card */
+  left: 890px;
+  bottom: 410px;
 }
 
 .card:nth-of-type(4) {
   background-color: #ffffff;
   border-top: 5px solid #fc9b1d;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+  width: 300px; /* Set a fixed width for each card */
+  height: 140px; /* Set a fixed height for each card */
+  bottom: 560px;
 }
