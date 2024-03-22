@@ -32,6 +32,7 @@ body {
 }
 
 .container {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr, 50px)); /* Set each column size to be smaller */
   gap: 2rem;
