@@ -1,6 +1,7 @@
 body {
   background-color: #fafafa;
   font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
+  overflow: hidden;
 }
 
 .tittle {
@@ -10,13 +11,13 @@ body {
 }
 
 .tittle h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: rgb(31, 31, 58); /* Keep the original gray color */
   margin-bottom: 0.5rem;
 }
 
 .tittle h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   opacity: 0.8; /* This reduces the text's opacity, making it appear lighter */
   color: rgb(125, 125, 137); 
@@ -32,7 +33,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, minmax(100px, 1fr, 50px)); /* Set each column size to be smaller */
   gap: 2rem;
   padding: 2rem;
 }
@@ -57,7 +58,7 @@ body {
 }
 
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -70,31 +71,31 @@ body {
   background-color: #ffffff;
   border-top: 5px solid #ea5353;
   width: 300px; /* Set a fixed width for each card */
-  height: 140px; /* Set a fixed height for each card */
+  height: 120px; /* Set a fixed height for each card */
 }
 
 .card:nth-of-type(2) {
   background-color: #ffffff;
   border-top: 5px solid #62dada;
   width: 300px; /* Set a fixed width for each card */
-  height: 140px; /* Set a fixed height for each card */
+  height: 120px; /* Set a fixed height for each card */
   left: 170px;
-  bottom: 130px;
+  bottom: 160px;
 }
 
 .card:nth-of-type(3) {
   background-color: #ffffff;
   border-top: 5px solid #4a9dfc;
   width: 300px; /* Set a fixed width for each card */
-  height: 140px; /* Set a fixed height for each card */
+  height: 120px; /* Set a fixed height for each card */
   left: 890px;
-  bottom: 410px;
+  bottom: 430px;
 }
 
 .card:nth-of-type(4) {
   background-color: #ffffff;
   border-top: 5px solid #fc9b1d;
   width: 300px; /* Set a fixed width for each card */
-  height: 140px; /* Set a fixed height for each card */
-  bottom: 560px;
+  height: 120px; /* Set a fixed height for each card */
+  bottom: 540px;
 }
