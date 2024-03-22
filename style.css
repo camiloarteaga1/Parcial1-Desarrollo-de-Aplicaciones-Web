@@ -1,0 +1,96 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
+}
+
+.tittle {
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tittle h1 {
+  font-size: 2.5rem;
+  color: rgb(31, 31, 58); /* Keep the original gray color */
+  margin-bottom: 0.5rem;
+}
+
+.tittle h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  opacity: 0.8; /* This reduces the text's opacity, making it appear lighter */
+  color: rgb(125, 125, 137); 
+  margin-bottom: 0.5rem;
+  margin-bottom: -20px;
+}
+
+.tittle p {
+  color: rgb(104, 104, 104); 
+  opacity: 0.7; /* This reduces the text's opacity, making it appear lighter */
+  margin-bottom: -10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns */
+  grid-template-rows: repeat(2, 1fr); /* Create two rows */
+  grid-template-areas: 
+    "team calc"
+    "sup karma"; /* Define the card placement in each grid area */
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-top: 5px solid #ea5353;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  position: relative; 
+  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+  padding-bottom: 90px;
+}
+
+.card img {
+  position: absolute; /* Added position absolute */
+  bottom: 20px; /* Positioned at the bottom */
+  right: 20px; /* Positioned at the right */
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: rgb(104, 104, 104); /* Keep the original gray color */
+  opacity: 0.7; /* This reduces the text's opacity, making it appear lighter */
+}
+
+.card:nth-of-type(2) {
+  background-color: #ffffff;
+  border-top: 5px solid #62dada;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+}
+
+.card:nth-of-type(3) {
+  background-color: #ffffff;
+  border-top: 5px solid #4a9dfc;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+}
+
+.card:nth-of-type(4) {
+  background-color: #ffffff;
+  border-top: 5px solid #fc9b1d;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(163, 165, 174, 1);
+}
